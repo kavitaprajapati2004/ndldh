@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <div id="head">
+            <h1>Expense Tracker</h1><br>
+        </div>
+        <label for="Expense-name"></label>
+        <input type="text" placeholder="Expense-name" id="Expense-name" >
+        <label for="Amount"></label>
+        <input type="text" placeholder="Amount" id="Amount">
+       
+        <select name="" id="">
+            <option value="" disabled selected>Select Category</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Parlour">Parlour</option>
+            <option value="Ticket">Ticket</option>
+            <option value="Travel">Travel</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="date"></label>
+        <input type="date" placeholder="Date" id="date">
+        <button type="submit">Add Expense</button>
+
+        <table id="table">
+            <tbody>
+            <thead>
+                <tr>
+                    <th>Expense-name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+               </tr>
+            </thead>
+           </tbody> 
+        </table>
+
+        <div id="Total-expenses">
+            Total Expenses: $<span id="Total-amount">0</span>
+        </div>
+    </div>
+
+    <!-- JavaScript: Place at the bottom of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
